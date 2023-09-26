@@ -1,0 +1,97 @@
+.witnesses {
+  background: #f5f5f5;
+  overflow: hidden;
+  &__head {
+  }
+  &__content {
+    padding-top: 50px;
+    height: 285px;
+    //TRYING CONTAINERSTYLES
+    height: 450px;
+
+    margin: 0 auto;
+    //end
+    &__center {
+      //TRY SliderStyles
+      &__div {
+        height: 100%;
+        flex-wrap: nowrap !important;
+        &__div {
+          display: flex;
+
+          gap: 20px;
+        }
+      }
+      &__card {
+        position: relative;
+        background: #fff;
+        text-align: center;
+        padding: 20px;
+        h3 {
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 700;
+          color: #000;
+          margin: 0;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 400;
+          color: #737b7d;
+          margin: 0;
+        }
+        img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          top: -100px;
+          border: 20px solid #fff;
+          border-radius: 90px;
+          -webkit-border-radius: 90px;
+          -moz-border-radius: 90px;
+          -ms-border-radius: 90px;
+          -o-border-radius: 90px;
+        }
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+      }
+    }
+  }
+}
+.witness-buttons {
+  display: flex;
+  justify-content: center;
+  &__button {
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+}
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .witnesses {
+    &__head {
+    }
+    &__content {
+      height: 333px;
+
+      article {
+        width: 400px;
+        height: 350px;
+      }
+      &__card {
+        height: 170px;
+        padding: 50px;
+
+        margin: auto;
+      }
+    }
+  }
+}

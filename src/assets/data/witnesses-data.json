@@ -1,0 +1,22 @@
+ [
+    {
+      "name": "Martin DUPONT",
+      "text": "Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "role": "CEO | Onatera",
+      "image": "martin"
+    },
+    {
+      "name": "Michèle MOREAU",
+      "text": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,",
+      "role": "Product owner | Travaux.com",
+      "image": "michele"
+    },
+    {
+      "name": "Sophie MARTIN",
+      "text": "“Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui !”",
+      "role": "Innovation Catalyst | Airbus Helicopters",
+      "image": "sophie"
+    }
+   
+  ]
+  

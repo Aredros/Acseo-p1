@@ -1,0 +1,108 @@
+.title-banner {
+  background: #ffff;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      button {
+        align-self: center;
+      }
+    }
+    .title-area {
+      text-align: left;
+      width: -webkit-fill-available;
+      position: relative;
+    }
+    h1 {
+      color: black;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 46px;
+      text-align: center;
+      z-index: 3;
+      position: relative;
+    }
+    .title-banner__line {
+      background-color: rgb(167, 217, 219);
+      height: 20px;
+      position: absolute;
+      width: 200px;
+      top: 50px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+    .title-banner__line2 {
+      background-color: rgb(167, 217, 219);
+      height: 20px;
+      position: absolute;
+      width: 200px;
+      top: 95px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+    }
+    p {
+      color: black;
+      margin: auto;
+    }
+  }
+}
+
+//TABLET
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .title-banner {
+    height: 660px;
+    &__left {
+      div {
+        align-self: center;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 50px;
+        h1 {
+          font-size: 60px;
+          text-align: left;
+          line-height: 62px;
+          margin-bottom: 0;
+        }
+        p {
+        }
+        button {
+        }
+      }
+      .title-banner__line {
+        height: 20px;
+        width: 84%;
+        top: 85px;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .title-banner__line2 {
+        height: 20px;
+        width: 71%;
+        top: 145px;
+        left: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    &__right {
+      svg {
+        height: 547px;
+      }
+    }
+  }
+}

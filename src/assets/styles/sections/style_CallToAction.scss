@@ -1,0 +1,18 @@
+.call-to-action {
+  background: #ffff;
+  &__head {
+    padding-top: 50px;
+  }
+  &__content {
+  }
+}
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .call-to-action {
+    &__head {
+    }
+    &__content {
+    }
+  }
+}

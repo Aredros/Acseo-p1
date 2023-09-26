@@ -1,0 +1,76 @@
+.main-header {
+  background: #ffff;
+  .primary-menu {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 88px;
+    svg {
+      height: 50px;
+    }
+    nav {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      //menu-element-div surround the div that will control the menu deroulant
+      .menu-element-div {
+        position: relative;
+        .menu-deroulant {
+          display: none;
+          z-index: 9;
+        }
+        &:hover .menu-deroulant {
+          display: flex;
+        }
+        border-left: 0.5px solid #a7d9db;
+        &:first-child {
+          border: none;
+        }
+      }
+      a {
+        border-left: 0.5px solid #a7d9db;
+        padding: 5px 15px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        cursor: pointer;
+        color: black;
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+    button {
+    }
+  }
+  .phone-menu {
+    margin: 20px auto;
+    &__menu {
+      text-align: center;
+      align-self: center;
+    }
+    &__logo {
+      text-align: center;
+      align-self: center;
+      svg {
+        height: 33px;
+      }
+    }
+    &__email {
+      text-align: center;
+      align-self: center;
+    }
+  }
+}
+
+//TABLET
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .main-header {
+    .primary-menu {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}

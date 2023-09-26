@@ -1,0 +1,56 @@
+.menu-element-div .menu-deroulant {
+  margin-top: 5px;
+  position: absolute;
+  padding: 0 10px 15px;
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(30, 53, 87, 0.15);
+  display: flex;
+  flex-direction: column;
+  //
+  left: 50%;
+  white-space: nowrap;
+  .menu-orange-line {
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #ff6d74;
+  }
+  &__links {
+    display: flex;
+    gap: 0 10px 10px;
+    flex-direction: column;
+  }
+  a {
+    border: 0 solid #fff !important;
+    margin-top: 10px !important;
+  }
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+
+.double-menu {
+  display: flex;
+  flex-direction: row !important;
+  .break-menu {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000;
+      padding-left: 15px;
+      margin-bottom: 0;
+    }
+  }
+}

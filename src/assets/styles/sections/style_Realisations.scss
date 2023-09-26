@@ -1,0 +1,98 @@
+.realisations {
+  background: #ffff;
+  overflow: hidden;
+  &__head {
+    position: relative;
+    h2 {
+    }
+    p {
+    }
+    svg {
+      position: absolute;
+      top: 110px;
+      left: -50px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      &:last-child {
+        left: 50px;
+      }
+    }
+  }
+  &__content {
+    //TRY SliderStyles
+    &__slider {
+      height: 300px;
+      flex-wrap: nowrap !important;
+      &__div {
+        display: flex;
+        gap: 3.5rem;
+        height: 400px;
+        &__div {
+          display: flex;
+          gap: 30px;
+        }
+      }
+    }
+    //end
+
+    article {
+      //slideStyles
+      width: 100%;
+      height: 100%;
+      width: 340px;
+      //END
+      // min-height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      .slide-info {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+      }
+      svg {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+    //TRYING CONTAINERSTYLES
+    height: 450px;
+    width: 550px !important;
+    margin: 0 auto;
+    //end
+  }
+}
+
+//TABLET
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .realisations {
+    &__head {
+      svg {
+        position: absolute;
+        top: 90px;
+        right: 150px;
+        left: auto;
+        &:last-child {
+          right: 100px;
+          left: auto;
+        }
+      }
+    }
+    &__content {
+      &__slider {
+        height: 100%;
+        .getSlidesContainerWithWidth {
+          display: flex;
+          gap: 3rem;
+        }
+      }
+      article {
+        width: 600px;
+      }
+    }
+  }
+}

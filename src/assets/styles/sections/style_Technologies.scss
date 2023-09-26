@@ -1,0 +1,67 @@
+.technologies {
+  background: #ffff;
+  &__head {
+  }
+  &__content {
+    .tech-column {
+      height: 135px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      .img-fluid {
+        &__symphony {
+          height: 88px;
+        }
+        &__react {
+          height: 51px;
+        }
+        &__node {
+          height: 30px;
+        }
+        &__vue {
+          height: 47px;
+        }
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//DESKTOP
+@media only screen and (min-width: 768px) {
+  .technologies {
+    padding-bottom: 100px;
+    &__head {
+    }
+    &__content {
+      .tech-column {
+        height: 260px;
+        gap: 20px;
+        .img-fluid {
+          &__symphony {
+            height: auto;
+          }
+          &__react {
+            height: auto;
+          }
+          &__node {
+            height: auto;
+          }
+          &__vue {
+            height: auto;
+          }
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
