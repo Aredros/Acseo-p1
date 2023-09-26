@@ -77,8 +77,6 @@
 //DESKTOP
 @media only screen and (min-width: 768px) {
   .witnesses {
-    &__head {
-    }
     &__content {
       height: 333px;
 
@@ -86,11 +84,13 @@
         width: 400px;
         height: 350px;
       }
-      &__card {
-        height: 170px;
-        padding: 50px;
+      &__center {
+        &__card {
+          height: 250px;
+          padding: 50px;
 
-        margin: auto;
+          margin: auto;
+        }
       }
     }
   }
